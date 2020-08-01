@@ -6,6 +6,10 @@ from . import helpers
 from . import params
 
 class BoxSerializer(serializers.ModelSerializer):
+    creator = serializers.SerializerMethodField()
+
+    def get_creator(self, instance):
+        return instance.creator.username
 
     class Meta:
         model = Box
