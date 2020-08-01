@@ -39,7 +39,7 @@ http://127.0.0.1:8000/api/boxes
 	"height":<float>
 }
 ```
-/api/boxes/<box_id> - to add new box (PUT)
+/api/boxes/<box_id> - to update a box (PUT)
 ```
 {
 	"length":<float>,
